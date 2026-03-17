@@ -17,6 +17,7 @@ jobs:
         uses: lvignoli/typst-action@main
         with:
           source_file: resume.typ
+          output_file: main.pdf
 
       - name: Prepare Pages folder
         run: |
