@@ -2,12 +2,12 @@
 
 // Put your personal information here, replacing mine
 #let name = "Martti Mourujärvi"
-#let location = "San Diego, CA"
-#let email = "stxu@hmc.edu"
-#let github = "github.com/stuxf"
-#let linkedin = "linkedin.com/in/stuxf"
-#let phone = "+1 (xxx) xxx-xxxx"
-#let personal-site = "stuxf.dev"
+#let location = "Helsinki, Finland"
+#let email = "martti@proton.mail"
+#let github = "github.com/marttimourujarvi"
+#let linkedin = "linkedin.com/in/martti-mourujarvi"
+#let phone = "+358 50 3394283"
+#let personal-site = "martti.sre"
 
 #show: resume.with(
   author: name,
@@ -42,21 +42,21 @@
 == Education
 
 #edu(
-  institution: "Harvey Mudd College",
-  location: "Claremont, CA",
-  dates: dates-helper(start-date: "Aug 2023", end-date: "May 2027"),
-  degree: "Bachelor's of Science, Computer Science and Mathematics",
+  institution: "University of Oulu",
+  location: "Finland",
+  dates: dates-helper(start-date: "Aug 2019", end-date: "May 2025"),
+  degree: "Computer Science and Engineering",
 )
-- Cumulative GPA: 4.0\/4.0 | Dean's List, Harvey S. Mudd Merit Scholarship, National Merit Scholarship
-- Relevant Coursework: Data Structures, Program Development, Microprocessors, Abstract Algebra I: Groups and Rings, Linear Algebra, Discrete Mathematics, Multivariable & Single Variable Calculus, Principles and Practice of Comp Sci
+- Cumulative GPA: 4.19\/5.0 | Thesis: Building a self-service learning platform using cloud native tools and gitops
+- Relevant Coursework: Distributed systems, Statistical analysis, Machine learning
 
 == Work Experience
 
 #work(
-  title: "Subatomic Shepherd and Caffeine Connoisseur",
-  location: "Atomville, CA",
-  company: "Microscopic Circus, Schrodinger's University",
-  dates: dates-helper(start-date: "May 2024", end-date: "Present"),
+  title: "Site Reliability Engineer",
+  location: "Oulu, Finland",
+  company: "OP Pohjola",
+  dates: dates-helper(start-date: "March 2024", end-date: "Present"),
 )
 - more bullet points go here
 
