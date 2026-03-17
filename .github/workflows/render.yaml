@@ -21,7 +21,7 @@ jobs:
       - name: Prepare Pages folder
         run: |
           mkdir _site
-          cp main.pdf _site/main.pdf
+          cp resume.pdf _site/resume.pdf
           cat > _site/index.html <<EOF
           <!DOCTYPE html>
           <html>
