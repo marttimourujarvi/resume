@@ -1,8 +1,5 @@
 name: Build Typst document
-on:
-  push:
-    paths:
-      - "**.typ"
+on: push
 
 permissions:
   contents: read
