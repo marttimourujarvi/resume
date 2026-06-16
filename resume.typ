@@ -59,10 +59,10 @@
   company: "OP Pohjola",
   dates: dates-helper(start-date: "Mar 2024", end-date: "Present"),
 )
-
 - Handle operations, monitoring, and releases on rotation for the internal developer platform serving 3000+ active monthly users
 - Develop internal Backstage plugins instrumented with OpenTelemetry for end-to-end observability
-- Manage infrastructure-as-code for the platform using AWS CDK and Terraform
+- Architect a telemetry gateway using OpenTelemetry GenAI semantic conventions — token usage, RED metrics, and prompts — to measure AI adoption across the org
+- Manage infrastructure-as-code for both developer and AI platforms using AWS CDK and Terraform
 - Mentor engineering colleagues on Chaos Engineering through the in-house academy
 - Build ephemeral, self-service laboratory instances on Kubernetes with Helm
 
@@ -84,17 +84,6 @@
 )
 - Built an automated documentation generation tool covering all services provided by the cloud team
 - Integrated code quality checks into change documents for all production builds
-- Presented the above tools to over 100 employees at OP
-
-#work(
-  title: "Full-stack developer",
-  location: "Oulu, Finland",
-  company: "Faculty of Information Technology and Electrical Engineering",
-  dates: dates-helper(start-date: "Jun 2020", end-date: "Oct 2020"),
-)
-- Designed and built a full-stack application from scratch in 3 months
-- Used by 32 student tutors to onboard over 300 new students at the start of the 2020 school year
-- Adopted by the faculty for continued use in 2021 and 2022
 
 == Projects
 
@@ -117,5 +106,8 @@
   url: "https://www.credly.com/badges/a357983f-6789-4700-a6b3-c285870d45ea",
   date: "Feb 12, 2026"
 )
+
+*Skills:* Kubernetes, Helm, Terraform, IaC, Azure, AWS, Docker, Observability, OpenTelemetry, Prometheus, Grafana, Dynatrace, Chaos Engineering, Backstage, Git, GitOps, CI/CD, Postgres, Node.js, TypeScript / JavaScript, Golang, Python, Agile, DevOps
+
 
 // ... more headers and stuff below
