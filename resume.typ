@@ -47,9 +47,9 @@
   dates: dates-helper(start-date: "Aug 2019", end-date: "May 2025"),
   degree: "Computer Science and Engineering",
 )
-- Cumulative GPA: 4.19\/5.0 | Thesis: Building a self-service learning platform using cloud native tools and gitops
+- Cumulative GPA: 4.19\/5.0 | Thesis: Building a self-service learning platform using cloud-native tools and GitOps
 - Relevant Coursework: Distributed systems, Statistical analysis, Machine learning
-- Student tutor for first year students
+- Student tutor for first-year students
 
 == Work Experience
 
@@ -60,11 +60,11 @@
   dates: dates-helper(start-date: "Mar 2024", end-date: "Present"),
 )
 
-- Take care of operations, monitoring and release for internal developer platform with > 3000 active monthly users
-- Develop internal plugins for Backstage, instrument with OpenTelemetry for observability, manage 
-- Manage IaC for internal developer solution with AWS CDK and Terraform
-- Mentoring my engineer colleagues about Chaos Engineering in in-house academy
-- Develop ephemeral self-service laboratories instances in Kubernetes with Helm
+- Handle operations, monitoring, and releases on rotation for the internal developer platform serving 3000+ active monthly users
+- Develop internal Backstage plugins instrumented with OpenTelemetry for end-to-end observability
+- Manage infrastructure-as-code for the platform using AWS CDK and Terraform
+- Mentor engineering colleagues on Chaos Engineering through the in-house academy
+- Build ephemeral, self-service laboratory instances on Kubernetes with Helm
 
 #work(
   title: "Junior Developer, Online payments",
@@ -72,9 +72,9 @@
   company: "OP Financial Group",
   dates: dates-helper(start-date: "May 2023", end-date: "Sep 2023"),
 )
-- Develop and deliver new features to existing online payment services in production
-- Enhancing teams’ developer experience by integrating code analysis tools to existing delivery pipelines
-- Comprehensive front- and backend development
+- Developed and delivered new features for online payment services running in production
+- Improved the team's developer experience by integrating code analysis tools into existing delivery pipelines
+- Contributed across the full stack, covering both front-end and back-end development
 
 #work(
   title: "DevOps Engineer traineeship",
@@ -82,9 +82,9 @@
   company: "OP Financial Group",
   dates: dates-helper(start-date: "May 2021", end-date: "Sep 2022"),
 )
-- Automated document generation tool for all tools provided by the cloud team
-- Code quality check integration to change documents from all production builds
-- Presentations held from tools mentioned above to over 100 employees at OP 
+- Built an automated documentation generation tool covering all services provided by the cloud team
+- Integrated code quality checks into change documents for all production builds
+- Presented the above tools to over 100 employees at OP
 
 #work(
   title: "Full-stack developer",
@@ -92,9 +92,9 @@
   company: "Faculty of Information Technology and Electrical Engineering",
   dates: dates-helper(start-date: "Jun 2020", end-date: "Oct 2020"),
 )
-- Full-stack application designed and built from scratch in 3 months
-- During the start of the school year 2020, the application was used by 32 student tutors to orientate over 300 new students
-- Faculty of Information Technology and Electrical Engineering decides to continue the use of the application in 2021, 2022
+- Designed and built a full-stack application from scratch in 3 months
+- Used by 32 student tutors to onboard over 300 new students at the start of the 2020 school year
+- Adopted by the faculty for continued use in 2021 and 2022
 
 == Projects
 
