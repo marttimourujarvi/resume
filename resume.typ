@@ -47,7 +47,7 @@
   dates: dates-helper(start-date: "Aug 2019", end-date: "May 2025"),
   degree: "Computer Science and Engineering",
 )
-- Cumulative GPA: 4.19\/5.0 | Thesis: Building a self-service learning platform using cloud-native tools and GitOps
+- Cumulative GPA: 4.09\/5.0 | Thesis: Building a self-service learning platform using cloud-native tools and GitOps
 - Relevant Coursework: Distributed systems, Statistical analysis, Machine learning
 - Student tutor for first-year students
 
@@ -77,7 +77,7 @@
 - Contributed across the full stack, covering both front-end and back-end development
 
 #work(
-  title: "DevOps Engineer traineeship",
+  title: "DevOps Engineer internship",
   location: "Oulu, Finland",
   company: "OP Financial Group",
   dates: dates-helper(start-date: "May 2021", end-date: "Sep 2022"),
