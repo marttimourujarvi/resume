@@ -13,13 +13,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Typst
+      - name: Typst (basic resume)
         uses: lvignoli/typst-action@main
         with:
           source_file: resume.typ
+
+      - name: Typst (modern resume)
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: resume-modern.typ
 
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
           name: document
-          path: resume.pdf
+          path: |
+            resume.pdf
+            resume-modern.pdf
