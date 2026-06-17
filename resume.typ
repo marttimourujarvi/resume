@@ -2,7 +2,7 @@
 
 // Put your personal information here, replacing mine
 #let name = "Martti Mourujärvi"
-#let location = "Greater Helsinki Area, Finland"
+#let location = "Helsinki Metropolitan Area, Finland"
 #let email = "marttimourujarvi@gmail.com"
 #let github = "github.com/marttimourujarvi"
 #let linkedin = "linkedin.com/in/martti-mourujarvi"
