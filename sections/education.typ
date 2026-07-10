@@ -6,7 +6,7 @@
   title: "University of Oulu",
   location: "Oulu, Finland",
   date: "August 2019 - May 2025",
-  description: "Computer Science and Engineering",
+  description: "M.Sc. in Computer Science and Engineering (Diplomi-insinööri)",
 )
 
 #resume-item[
