@@ -1,9 +1,8 @@
-name: Build Typst document
+name: Release
 on: push
 
 permissions:
   contents: read
-  pages: write
   id-token: write
 
 jobs:
@@ -30,3 +29,22 @@ jobs:
           path: |
             resume.pdf
             resume-modern.pdf
+
+      # --- Publish to S3 (main branch only) ---
+      - name: Configure AWS credentials (OIDC)
+        if: github.ref == 'refs/heads/main'
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Publish PDFs to S3
+        if: github.ref == 'refs/heads/main'
+        run: |
+          TS=$(date -u +%Y%m%d-%H%M%S)
+          # Private, timestamped archive
+          aws s3 cp resume-modern.pdf "s3://${{ vars.S3_BUCKET }}/modern/modern-${TS}.pdf"
+          aws s3 cp resume.pdf        "s3://${{ vars.S3_BUCKET }}/simple/simple-${TS}.pdf"
+          # Public folder: always the latest, overwritten each run
+          aws s3 cp resume-modern.pdf "s3://${{ vars.S3_BUCKET }}/public/modern.pdf"
+          aws s3 cp resume.pdf        "s3://${{ vars.S3_BUCKET }}/public/simple.pdf"
