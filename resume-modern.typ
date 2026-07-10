@@ -15,6 +15,7 @@
     phone: "(+358) 50 3394283",
     github: "marttimourujarvi",
     linkedin: "martti-mourujarvi",
+    homepage: "marttimourujarvi.com",
     address: "Helsinki Metropolitan Area, Finland",
     positions: (
       "Site Reliability Engineer",

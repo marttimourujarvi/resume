@@ -1,5 +1,23 @@
 #import "@preview/basic-resume:0.2.9": *
 
+// Override the package's certificates() so the certificate name is the
+// hyperlink (pointing to the Credly badge) instead of showing the raw URL.
+#let certificates(
+  name: "",
+  issuer: "",
+  url: "",
+  date: "",
+) = {
+  [
+    #if url != "" {
+      link(url)[*#name*]
+    } else {
+      [*#name*]
+    }, #issuer
+    #h(1fr) #date
+  ]
+}
+
 // Put your personal information here, replacing mine
 #let name = "Martti Mourujärvi"
 #let location = "Helsinki Metropolitan Area, Finland"
@@ -7,7 +25,7 @@
 #let github = "github.com/marttimourujarvi"
 #let linkedin = "linkedin.com/in/martti-mourujarvi"
 #let phone = "+358 50 3394283"
-#let personal-site = "martti.sre"
+#let personal-site = "marttimourujarvi.com"
 
 #show: resume.with(
   author: name,
@@ -19,7 +37,7 @@
   github: github,
   linkedin: linkedin,
   phone: phone,
-  //personal-site: personal-site,
+  personal-site: personal-site,
   accent-color: "#26428b",
   font: "New Computer Modern",
   paper: "us-letter",
@@ -61,8 +79,7 @@
 )
 - Handle operations, monitoring, and releases on rotation for the internal developer platform serving 3000+ active monthly users
 - Develop internal Backstage plugins instrumented with OpenTelemetry for end-to-end observability
-- Architect a telemetry gateway using OpenTelemetry GenAI semantic conventions — token usage, RED metrics, and prompts — to measure AI adoption across the org
-- Manage infrastructure-as-code for both developer and AI platforms using AWS CDK and Terraform
+- Architect a telemetry gateway using OpenTelemetry GenAI semantic conventions — token usage, RED metrics, and prompts — to measure AI adoption across the organization
 - Mentor engineering colleagues on Chaos Engineering through the in-house academy
 - Build ephemeral, self-service laboratory instances on Kubernetes with Helm
 
@@ -88,9 +105,11 @@
 == Projects
 
 #project(dates: dates-helper(start-date: "Jan 2026", end-date: "Present"), name: "Homelab Kubernetes Cluster", role: "Administrator")
+- Operate a 4-node Kubernetes cluster that hosts NFS storage for storing and streaming media on my home LAN
 - Designed and operate a self-hosted Talos Linux Kubernetes cluster with Cilium CNI, Gateway API ingress, and cert-manager for automated TLS certificate management
-- Deployed a full observability stack (Prometheus, Grafana, Loki, Tempo) for OpenTelemetry support
-- Migrated cluster CNI from Flannel to Cilium, including L2 load balancer announcement to replace MetalLB
+- Designed and operate a self-hosted Talos Linux Kubernetes cluster with Cilium CNI, Gateway API ingress, and cert-manager for automated TLS certificate management
+
+
 
 #project(role: "Contributor", name: "Multiple Open Source Projects")
 - OpenTelemetry JavaScript Semantic Conventions
@@ -112,6 +131,13 @@
   issuer: "The Linux Foundation",
   url: "https://www.credly.com/badges/01aecd58-b0ee-418e-bd2d-1cc914cae002",
   date: "Jul 08, 2026"
+)
+
+#certificates(
+  name: "LFC112: Creating Effective Documentation for Developers",
+  issuer: "The Linux Foundation",
+  url: "https://www.credly.com/badges/e6434e54-3b8f-4014-95cc-a01b0a74cb24",
+  date: "Aug 27, 2025"
 )
 
 *Skills:* Kubernetes, Helm, Terraform, IaC, Azure, AWS, Docker, Observability, OpenTelemetry, Prometheus, Grafana, Dynatrace, Chaos Engineering, Backstage, Git, GitOps, CI/CD, Postgres, Node.js, TypeScript / JavaScript, Golang, Python, Agile, DevOps
