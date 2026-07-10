@@ -63,7 +63,7 @@
   institution: "University of Oulu",
   location: "Oulu, Finland",
   dates: dates-helper(start-date: "Aug 2019", end-date: "May 2025"),
-  degree: "M.Sc. in Computer Science and Engineering (Diplomi-insinööri)",
+  degree: "M.Sc. in Computer Science and Engineering",
 )
 - Cumulative GPA: 4.09\/5.0 | Thesis: Building a self-service learning platform using cloud-native tools and GitOps
 - Relevant Coursework: Distributed systems, Statistical analysis, Machine learning
