@@ -107,6 +107,13 @@
   date: "Feb 12, 2026"
 )
 
+#certificates(
+  name: "LFCS: Linux Foundation Certified Systems Administrator",
+  issuer: "The Linux Foundation",
+  url: "https://www.credly.com/badges/01aecd58-b0ee-418e-bd2d-1cc914cae002",
+  date: "Jul 08, 2026"
+)
+
 *Skills:* Kubernetes, Helm, Terraform, IaC, Azure, AWS, Docker, Observability, OpenTelemetry, Prometheus, Grafana, Dynatrace, Chaos Engineering, Backstage, Git, GitOps, CI/CD, Postgres, Node.js, TypeScript / JavaScript, Golang, Python, Agile, DevOps
 
 

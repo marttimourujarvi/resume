@@ -58,3 +58,11 @@
   description: "The Linux Foundation",
 )
 #v(0.65em)
+
+#resume-entry(
+  title: "LFCS: Linux Foundation Certified Systems Administrator",
+  location: [#link("https://www.credly.com/badges/01aecd58-b0ee-418e-bd2d-1cc914cae002")[Credly]],
+  date: "July 08, 2026",
+  description: "The Linux Foundation",
+)
+#v(0.65em)
