@@ -1,13 +1,11 @@
 name: Release
 on: push
 
-permissions:
-  contents: read
-  id-token: write
-
 jobs:
-  build_typst_documents:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,16 +28,26 @@ jobs:
             resume.pdf
             resume-modern.pdf
 
-      # --- Publish to S3 (main branch only) ---
+  publish:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Download PDFs
+        uses: actions/download-artifact@v4
+        with:
+          name: document
+
       - name: Configure AWS credentials (OIDC)
-        if: github.ref == 'refs/heads/main'
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Publish PDFs to S3
-        if: github.ref == 'refs/heads/main'
         run: |
           TS=$(date -u +%Y%m%d-%H%M%S)
           # Private, timestamped archive
